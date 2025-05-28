@@ -15,7 +15,7 @@
       "api/pnasync.php": {
       "runtime": "vercel-php@0.7.3",
       "maxDuration": 60
-    },
+    }
   },
   "routes": [
     { "src": "/abs", "dest": "/api/absync.php" },
