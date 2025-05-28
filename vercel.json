@@ -1,0 +1,11 @@
+{
+  "functions": {
+    "api/absync.php": {
+      "runtime": "vercel-php@0.7.3",
+      "maxDuration": 60
+    }
+  },
+  "routes": [
+    { "src": "/(.*)", "dest": "/api/absync.php" }
+  ]
+}
