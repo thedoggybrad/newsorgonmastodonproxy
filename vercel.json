@@ -8,11 +8,11 @@
       "runtime": "vercel-php@0.7.3",
       "maxDuration": 60
     },
-      "api/inquirersync.php": {
+    "api/inquirersync.php": {
       "runtime": "vercel-php@0.7.3",
       "maxDuration": 60
     },
-      "api/pnasync.php": {
+    "api/pnasync.php": {
       "runtime": "vercel-php@0.7.3",
       "maxDuration": 60
     }
@@ -21,6 +21,7 @@
     { "src": "/abs", "dest": "/api/absync.php" },
     { "src": "/inquirer", "dest": "/api/inquirersync.php" },
     { "src": "/pia", "dest": "/api/piasync.php" },
-    { "src": "/pna", "dest": "/api/pnasync.php" }
+    { "src": "/pna", "dest": "/api/pnasync.php" },
+    { "src": "/pna-proxy", "dest": "/api/pna-proxy.js" } 
   ]
 }
