@@ -15,7 +15,7 @@ function getHTMLContent($url) {
 }
 
 // Fetch the HTML content
-$url = 'https://newsorgonmastodonproxy.vercel.app/api/pna-proxy';
+$url = 'https://newsorgonmastodonproxy.vercel.app/pna-proxy';
 $html = getHTMLContent($url);
 
 if ($html === false) {
