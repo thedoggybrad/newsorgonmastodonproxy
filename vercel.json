@@ -15,7 +15,7 @@
   },
   "routes": [
     { "src": "/abs", "dest": "/api/absync.php" },
-    { "src": "/abs", "dest": "/api/inquirersync.php" },
+    { "src": "/inquirer", "dest": "/api/inquirersync.php" },
     { "src": "/pia", "dest": "/api/piasync.php" }
   ]
 }
