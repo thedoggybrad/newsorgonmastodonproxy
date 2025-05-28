@@ -22,6 +22,7 @@
     { "src": "/inquirer", "dest": "/api/inquirersync.php" },
     { "src": "/pia", "dest": "/api/piasync.php" },
     { "src": "/pna", "dest": "/api/pnasync.php" },
+    { "src": "/(.*)", "dest": "/index.html" }
     { "src": "/pna-proxy", "dest": "/api/pna-proxy.js" } 
   ]
 }
