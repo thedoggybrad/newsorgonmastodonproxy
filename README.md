@@ -7,6 +7,3 @@ Most of them are proxied because Mastofeed's requests are blocked but some of th
 <a rel="me" href="https://mastodon.social/@rssabscbnnews">ABS-CBN News</a><br>
 <a rel="me" href="https://mastodon.social/@rssphilippinedailyinquirer">Philippine Daily Inquirer</a><br>
 <a rel="me" href="https://mastodon.social/@rssphpinfoagency">Philippine Information Agency (PIA)</a><br>
-
-## Temporarily Shutted Down Because It Does Not Work
-<a rel="me" href="https://mastodon.social/@rssphilippinenewsagency">Philippine News Agency (PNA)</a>
