@@ -5,7 +5,7 @@ function getHTMLContent($url) {
     $opts = [
         "http" => [
             "method" => "GET",
-            "header" => "User-Agent:           NetcraftSurveyAgent/1.0",
+            "header" => "User-Agent: NetcraftSurveyAgent/1.0",
         ]
     ];
     $context = stream_context_create($opts);
