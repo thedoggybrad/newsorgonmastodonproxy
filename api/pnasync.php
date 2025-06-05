@@ -14,7 +14,7 @@ function getHTMLContent($url) {
 }
 
 // Fetch the HTML content
-$url = 'https://pna.gov.ph/';
+$url = 'https://newsorgonmastodonproxy.vercel.app/pna-proxy';
 $html = getHTMLContent($url);
 
 if ($html === false) {
