@@ -17,6 +17,7 @@
     { "src": "/abs", "dest": "/api/absync.php" },
     { "src": "/mb", "dest": "/api/mb.php" },
     { "src": "/inquirer", "dest": "/api/inquirersync.php" },
+    { "src": "/pna", "dest": "/api/pna.js" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
