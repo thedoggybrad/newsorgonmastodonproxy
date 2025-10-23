@@ -4,10 +4,6 @@
       "runtime": "vercel-php@0.7.3",
       "maxDuration": 60
     },
-    "api/piasync.php": {
-      "runtime": "vercel-php@0.7.3",
-      "maxDuration": 60
-    },
     "api/mb.php": {
       "runtime": "vercel-php@0.7.3",
       "maxDuration": 60
@@ -21,7 +17,6 @@
     { "src": "/abs", "dest": "/api/absync.php" },
     { "src": "/mb", "dest": "/api/mb.php" },
     { "src": "/inquirer", "dest": "/api/inquirersync.php" },
-    { "src": "/pia", "dest": "/api/piasync.php" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
