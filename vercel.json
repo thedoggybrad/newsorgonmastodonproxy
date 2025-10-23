@@ -8,6 +8,10 @@
       "runtime": "vercel-php@0.7.3",
       "maxDuration": 60
     },
+      "api/thepna.php": {
+      "runtime": "vercel-php@0.7.3",
+      "maxDuration": 60
+    },
     "api/inquirersync.php": {
       "runtime": "vercel-php@0.7.3",
       "maxDuration": 60
