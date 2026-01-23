@@ -6,7 +6,7 @@ export default async function handler(req, res) {
     const response = await fetch("https://www.pna.gov.ph/articles/list", {
       method: "GET",
       headers: {
-        "User-Agent": "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0)",
         "Cookie": cookies,  // Pass cookies from the incoming request
       },
       credentials: "include",  // Ensure cookies are included for cross-origin requests
