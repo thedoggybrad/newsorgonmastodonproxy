@@ -1,8 +1,5 @@
 <?php
 
-// Start output buffering
-ob_start();
-
 $rss_url = 'https://manilastandard.net/ms-rss?category=news';
 
 // Create a stream context with HTTP headers, including user agent and follow redirects
@@ -14,7 +11,7 @@ $options = [
             'Accept: */*',
         ],
         'follow_location' => 1,
-        'timeout' => 30
+        'timeout' => 15
     ]
 ];
 
@@ -24,13 +21,11 @@ $rss_content = @file_get_contents($rss_url, false, $context);
 
 if ($rss_content === false) {
     echo "Failed to fetch RSS feed using file_get_contents.";
+    // Optionally, you can inspect $http_response_header here for debugging
 } else {
-    // Ensure no output has been sent before setting the content type
+    // Just display the RSS feed content
     header('Content-Type: application/rss+xml; charset=utf-8');
     echo $rss_content;
 }
-
-// End output buffering and send all output
-ob_end_flush();
 
 ?>
