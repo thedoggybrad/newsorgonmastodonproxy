@@ -20,7 +20,7 @@
   "routes": [
     { "src": "/abs", "dest": "/api/absync.php" },
     { "src": "/mb", "dest": "/api/mb.php" },
-    { "src": "/mb", "dest": "/api/ms.php" },
+    { "src": "/ms", "dest": "/api/ms.php" },
     { "src": "/inquirer", "dest": "/api/inquirersync.php" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
