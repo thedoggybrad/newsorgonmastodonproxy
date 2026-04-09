@@ -12,7 +12,7 @@ $options = [
             // 'Accept: application/rss+xml, application/xml, text/xml',
         ],
         'follow_location' => 1,
-        'timeout' => 15
+        'timeout' => 30
     ]
 ];
 
@@ -22,11 +22,23 @@ $rss_content = @file_get_contents($rss_url, false, $context);
 
 if ($rss_content === false) {
     echo "Failed to fetch RSS feed using file_get_contents.";
-    // Optionally, you can inspect $http_response_header here for debugging
 } else {
-    // Just display the RSS feed content
-    header('Content-Type: application/rss+xml; charset=utf-8');
-    echo $rss_content;
+    // Check if the content is valid XML
+    libxml_use_internal_errors(true);
+    $dom = new DOMDocument();
+    $dom->loadXML($rss_content);
+
+    if ($dom->validate()) {
+        // If it's a valid RSS XML, output it with proper content-type
+        header('Content-Type: application/rss+xml; charset=utf-8');
+        echo $rss_content;
+    } else {
+        // If the RSS is invalid, display errors
+        echo "Invalid RSS feed format.";
+        foreach(libxml_get_errors() as $error) {
+            echo "<br>" . $error->message;
+        }
+    }
 }
 
 ?>
