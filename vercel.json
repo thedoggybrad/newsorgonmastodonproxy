@@ -1,19 +1,19 @@
 {
   "functions": {
     "api/absync.php": {
-      "runtime": "vercel-php@0.7.3",
+      "runtime": "vercel-php@0.9.0",
       "maxDuration": 60
     },
     "api/mb.php": {
-      "runtime": "vercel-php@0.7.3",
+      "runtime": "vercel-php@0.9.0",
       "maxDuration": 60
     },
     "api/ms.php": {
-      "runtime": "vercel-php@0.7.3",
+      "runtime": "vercel-php@0.9.0",
       "maxDuration": 60
     },
     "api/inquirersync.php": {
-      "runtime": "vercel-php@0.7.3",
+      "runtime": "vercel-php@0.9.0",
       "maxDuration": 60
     }
   },
